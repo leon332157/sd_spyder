@@ -2,7 +2,6 @@
 import os
 from bs4 import BeautifulSoup
 import requests
-
 BASE_URL = 'http://www.shangdejy.com'  # 初始网址
 content = requests.get(BASE_URL + '/SiteFiles/Inner/page.aspx?s=1').content.decode('utf8')  # 主页
 bs = BeautifulSoup(content, 'html.parser')  # 实例化bs类
